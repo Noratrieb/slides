@@ -47,3 +47,5 @@ The feature request is to the *library API team*, as it's about a guarantee.
 So we add those labels. Remove needs-triage, as we're doing triage, add the docs, thread and atomics area, the category
 feature request and the team libs api. If you're not part of a team that has write access to the repository, you can leave
 a comment with rustbot as shown here. If you're interested and want to know more, see the link below.
+
+For bugs, especially compiler panics (so called internal compiler errors, ICE for short)
