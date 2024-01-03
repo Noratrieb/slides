@@ -37,4 +37,13 @@ Triaging issues is great because it's easy to get started and you can put in ver
 You can triage one issue in two minutes, or you can spend 2 hours on an issue. It always depends on the
 issue and how much time you want to put in, even the small work is nice.
 
-For issues
+Some of the things that are involved when triaging issues are labelling, minimization, bisection and adding tests.
+
+Labelling is the task here that takes the least time. We have an example issue here, that requests that the standard
+library documents the memory ordering guarantees for the thread spawn function.
+Let's think about what this is: This is a *feature request* for *documentation* about *threads* and *atomics*.
+The feature request is to the *library API team*, as it's about a guarantee.
+
+So we add those labels. Remove needs-triage, as we're doing triage, add the docs, thread and atomics area, the category
+feature request and the team libs api. If you're not part of a team that has write access to the repository, you can leave
+a comment with rustbot as shown here. If you're interested and want to know more, see the link below.
