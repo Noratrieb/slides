@@ -155,4 +155,6 @@ For bugs, especially compiler panics (so called internal compiler errors, ICE fo
     - typos, bugs, case missing
     - saves work, faster
 - to remember
-    - over
+    - its over
+- review times
+    - 
