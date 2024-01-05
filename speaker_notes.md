@@ -49,3 +49,110 @@ feature request and the team libs api. If you're not part of a team that has wri
 a comment with rustbot as shown here. If you're interested and want to know more, see the link below.
 
 For bugs, especially compiler panics (so called internal compiler errors, ICE for short)
+
+# bullet points
+
+- welcome
+    - many ways to contribute
+    - after, start yourself
+- whoami
+    - nils, compiler contributors team
+    - helping people, triaging, shitposting on discord
+- others
+    - no one yet :(
+- start
+    - some contributed before
+    - wanted to but never have
+    - many ways, no matter experience
+    - some domain-expecific expertise
+    - some no knowledge of rust
+    - learn
+- what to
+- not code
+    - usual focus on code
+    - rust also not good, thanks.rust-lang.org
+- triage
+    - same
+    - variable amounts of time
+    - labelling, minimization, bisection, adding tests
+- labelling
+    - least time
+    - std document mmeory ordering thread::spawn
+    - feature request, documentation, threads, atomics, libs api
+    - -needs-triage +A-docs +T-libs-api +C-feature-request +A-thread +A-atomics
+    - use rustbot
+    - see link
+- bisect
+    - helps debugging
+    - priorization for recent regression
+    - E-needs-bisect (not only)
+    - ICE easiest
+    - cargo-bisect-rustc (--access github)
+    - start date, often last year or last few months
+    - issue comment
+- minimization
+    - helps debugging
+    - E-needs-mcve
+    - me in 2 hours to 60 lines, on github
+    - felix (compiler team) blog post
+    - cargo-minimize
+- adding tests
+    - E-needs-test
+    - fixed, no test
+    - commit test
+    - see compiler section
+- existing unstable features
+    - a lot of unstable features
+    - used some or many of them, a favourite
+    - not GCE, const traits or specialization
+    - goal: stabilize or close
+- tracking issues
+    - C-tracking-issue
+    - over 700
+    - dont new
+    - really old -> problems
+    - middle
+- summarize
+    - most important: summarize discussion
+    - aggregate open and resolved
+    - propose next steps, suggest answers
+- stabilization report
+    - no open questions
+    - proportional to amont of discussion
+    - team takes a look
+- close
+    - use cases haven't proven themselves
+    - subseeded by other feature
+- fcps
+    - team decisions
+    - majority approves
+- writing code
+    - want to write code
+    - lots of code
+- official tooling
+    - recommendation
+    - very good, but needs help
+    - different, choose
+    - fix bugs, implement new features (like lints)
+- plsss elaborate on the tooling aaaa
+- standard library
+- compiler
+    - me
+    - diagnostics (many, many)
+    - internal compiler error fixes (variable difficulty)
+    - E-has-mentor
+- diagnostics
+    - my first
+    - search for issue, fix it
+- diagnostics how to
+    - A-diagnostics label, close to 2000
+    - dev guide
+    - implement the fix
+    - zulip.rust-lang.org
+- this compiler section really sucks lol
+- reviews
+    - review other peoples PRs
+    - typos, bugs, case missing
+    - saves work, faster
+- to remember
+    - over
