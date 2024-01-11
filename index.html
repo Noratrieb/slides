@@ -25,6 +25,9 @@
 							<ul>
 								<li>contributing since 2022</li>
 								<li>compiler contributors team since 2023</li>
+								<li>all areas of the compiler</li>
+								<li>issue triaging</li>
+								<li>1.74 cargo feature cfg diagnostics</li>
 							</ul>
 							<br>
 						</div>
@@ -34,10 +37,17 @@
 					</div>
 				</section>
 				<section>
-					<h2>made in collaboration with</h2>
-					<div>you who sees this right now</div>
-					<div>and you</div>
-					<div>and you too</div>
+					<h2>reviewed &hearts;</h2>
+					<div style="display: grid; grid-template-columns: 70% auto; align-items: center;">
+					<div>compiler-errors, style team member</div>
+					<img height="110" src="compiler-errors.jpeg">
+					<div>WaffleLapkin, the most non-binary compiler contributor</div>
+					<img height="110" src="waffle.jpeg">
+					<div>jyn514, the gayest alumni of the bootstrap team</div>
+					<img height="110" src="jyn.jpeg">
+					<div>lunasorcery, friend of the above</div>
+					<img height="110" src="luna.jpeg">
+					</div>
 				</section>
 				<section data-markdown>
 					<textarea data-template>
@@ -97,12 +107,18 @@
 							--start 2023-01-01 --end 2023-12-19
 					</code></pre>
 					<a href="https://github.com/rust-lang/cargo-bisect-rustc">https://github.com/rust-lang/cargo-bisect-rustc</a>
+					<div>downloads toolchains instead of building them</div>
 				</section>
 				<section>
 					<h2 style="display: flex; justify-content: center; align-items: center;">minimization <img src="E-needs-mcve.png" height="60"></h2>
+					<div>very useful for fixing an issue</div>
 					<img src="triage-min-issue.png">
 				</section>
 				<section>
+					<!-- 
+						Learn more things about Rust
+						Can be the start for doing a fix yourself
+					 -->
 					<h2>minimization</h2>
 					<p>I minimized that issue to 60 lines in 2 hours</p>
 					<a href="https://github.com/Nilstrieb/ice-104649">https://github.com/Nilstrieb/ice-104649</a>
@@ -161,10 +177,11 @@
 
 						always in need of help!
 
-						- rustfmt
 						- rustup
 						- clippy
 						- cargo
+						- rust-analyzer
+						- rustfmt
 					</textarea>
 				</section>
 				<section data-markdown>
@@ -175,6 +192,7 @@
 
 						- performance improvements
 						- bug fixes
+						- APIs are selective
 					</textarea>
 				</section>
 				<section data-markdown>
@@ -190,16 +208,29 @@
 					<img src="my-first.png">
 				</section>
 				<section>
-					<h2>how to</h2>
-					<img src="A-diagnostics.png">
-					<br>
+					<h2>writing a new trait solver</h2>
+					<h3>errs.png</3>
+				</section>
+				<section>
+					<h2>Internal compiler-errors fixes</h2>
+					<div>step 1: become a surgeon</div>
+					<img src="my-first.png">
+				</section>
+				<!-- EXAMPLES (mine) -->
+				<section>
+					<h2>rustc dev guide</h2>
 					<a href="https://rustc-dev-guide.rust-lang.org/">https://rustc-dev-guide.rust-lang.org/</a>
-					<p>zulip.rust-lang.org, #t-compiler/help</p>
+				</section>
+				<!-- you can pick another one -->
+				<section>
+					<h2>ask for help</h2>
+					<p>zulip.rust-lang.org, #t-compiler/help</p> <!-- TODO -->
 				</section>
 				<section data-markdown>
 					<textarea data-template>
-						## reviews
+						## looking at prs
 
+						- yes <!-- TODO -->
 						- leave review comments on random PRs
 					</textarea>
 				</section>
@@ -210,15 +241,15 @@
 				</section>
 				<section data-markdown>
 					<textarea data-template>
-						## review times
-
 						- volunteers
 						- weeks
 						- rust-lang/rust: ping if >2 weeks
 					</textarea>
+					<!-- some of my own contributionsd -->
 				</section>
 				<section>
 					<h2>see you on GitHub!</h2>
+					<!-- TODO add all URLs -->
 				</section>
 			</div>
 		</div>
