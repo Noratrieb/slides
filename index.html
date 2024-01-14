@@ -23,8 +23,8 @@
 						<div>
 							<div>Nilstrieb</div>
 							<ul>
-								<li>contributing since 2022</li>
-								<li>compiler contributors team since 2023</li>
+								<li>contributing since 2021</li>
+								<li>compiler contributors team since 2022</li>
 								<li>all areas of the compiler</li>
 								<li>issue triaging</li>
 								<li>1.74 cargo feature cfg diagnostics</li>
@@ -110,6 +110,10 @@
 					<div>downloads toolchains instead of building them</div>
 				</section>
 				<section>
+					<h2>bisection</h2>
+					<img src="triage-bisect-comment.png">
+				</section>
+				<section>
 					<h2 style="display: flex; justify-content: center; align-items: center;">minimization <img src="E-needs-mcve.png" height="60"></h2>
 					<div>very useful for fixing an issue</div>
 					<img src="triage-min-issue.png">
@@ -134,8 +138,6 @@
 				<section data-markdown>
 					<textarea data-template>
 						## existing unstable features
-
-						high value, very needed
 
 						- stabilize
 						- close
@@ -166,10 +168,8 @@
 					<h2>final comment periods</h2>
 					<img src="stabilize-fcp.png">
 				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# writing code
-					</textarea>
+				<section>
+					<h2>writing code</h2>
 				</section>
 				<section data-markdown>
 					<textarea data-template>
@@ -177,10 +177,10 @@
 
 						always in need of help!
 
-						- rustup
 						- clippy
-						- cargo
 						- rust-analyzer
+						- cargo
+						- rustup
 						- rustfmt
 					</textarea>
 				</section>
@@ -190,6 +190,7 @@
 
 						limited review bandwidth!
 
+						- improve documentation
 						- performance improvements
 						- bug fixes
 						- APIs are selective
@@ -199,57 +200,65 @@
 					<textarea data-template>
 						## compiler contributions
 
-						- diagnostics are a great starting point
+						- diagnostics are a great starting point (A-diagnostics)
 						- internal compiler error fixes
+						- E-{mentor,easy} labels
 					</textarea>
 				</section>
 				<section>
-					<h2>diagnostics</h2>
+					<h2>examples of my PRs</h2>
 					<img src="my-first.png">
+					<a href="https://github.com/rust-lang/rust/pull/89892">https://github.com/rust-lang/rust/pull/89892</a>
 				</section>
 				<section>
-					<h2>writing a new trait solver</h2>
-					<h3>errs.png</3>
+					<h2>examples of my PRs</h2>
+					<img src="my-let-underscore-lock.png">
+					<a href="https://github.com/rust-lang/rust/pull/119710">https://github.com/rust-lang/rust/pull/119710</a>
 				</section>
 				<section>
-					<h2>Internal compiler-errors fixes</h2>
-					<div>step 1: become a surgeon</div>
-					<img src="my-first.png">
+					<h2>examples of my PRs</h2>
+					<img src="my-clippy-needless-borrow.png">
+					<a href="https://github.com/rust-lang/rust/pull/118143">https://github.com/rust-lang/rust/pull/118143</a>
 				</section>
-				<!-- EXAMPLES (mine) -->
+				<section>
+					<h2>examples of my PRs</h2>
+					<img src="my-carbon-hashing.png">
+					<a href="https://github.com/rust-lang/rust/pull/117079">https://github.com/rust-lang/rust/pull/117079</a>
+				</section>
 				<section>
 					<h2>rustc dev guide</h2>
 					<a href="https://rustc-dev-guide.rust-lang.org/">https://rustc-dev-guide.rust-lang.org/</a>
-				</section>
-				<!-- you can pick another one -->
-				<section>
-					<h2>ask for help</h2>
-					<p>zulip.rust-lang.org, #t-compiler/help</p> <!-- TODO -->
 				</section>
 				<section data-markdown>
 					<textarea data-template>
 						## looking at prs
 
-						- yes <!-- TODO -->
-						- leave review comments on random PRs
+						- learn more about what other people are doing
+						- leave review comments if you see something
 					</textarea>
 				</section>
 				<section data-markdown>
 					<textarea data-template>
-						# to remember
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
+						## to remember
+
 						- volunteers
-						- weeks
-						- rust-lang/rust: ping if >2 weeks
+						- review times sometimes long (weeks)
+						- rust-lang/rust: ping if review >2 weeks
 					</textarea>
-					<!-- some of my own contributionsd -->
+				</section>
+				<section>
+					<h2>ask for help</h2>
+					<p>rust-lang.zulipchat.com</p>
 				</section>
 				<section>
 					<h2>see you on GitHub!</h2>
-					<!-- TODO add all URLs -->
+					<a href="https://rustc-dev-guide.rust-lang.org/">https://rustc-dev-guide.rust-lang.org/</a>
+					<a href="https://forge.rust-lang.org/release/issue-triaging.html">https://forge.rust-lang.org/release/issue-triaging.html</a>
+					<a href="https://github.com/rust-lang/cargo-bisect-rustc">https://github.com/rust-lang/cargo-bisect-rustc</a>
+					<a href="http://blog.pnkfx.org/blog/2019/11/18/rust-bug-minimization-patterns/">http://blog.pnkfx.org/blog/2019/11/18/rust-bug-minimization-patterns/</a>
+					<br>
+					<a href="https://github.com/Nilstrieb/cargo-minimize">https://github.com/Nilstrieb/cargo-minimize</a>
+					<a href="https://rust-lang.zulipchat.com">rust-lang.zulipchat.com</a>
 				</section>
 			</div>
 		</div>

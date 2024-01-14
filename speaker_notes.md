@@ -1,110 +1,74 @@
 # speaker notes
 
-Hi! Welcome to my presentation about how to contribute to the Rust project. There are numerous ways
-to help Rust by contributing to it, and I'm going to list some of them, show you how to do it
-and point you to further resources about it. So after my talk, you hopefully have the knowledge and
-motivation to get started yourself if you're interested.
-
-But first, who am I to talk about this? I'm nils, and I've been a member of the compiler contributors
-team for over a year now. In addition to contributing code to the compiler I've also been involved in
-other things, like helping other people contribute to the compiler, triaging issues and of course shitposting on Discord.
-
-But this talk here isn't just mine alone, other people helped with this too, like these silly bingles.
-
-So, let's start contributing to Rust. Maybe some of you here have contributed something to Rust before,
-(maybe you didn't even think it was a contribution), and I assume some of you have wanted to do it but have
-never done it for various reasons, like not knowing where to start or even thinking you're not good enough to do it.
-
-Here's the good news for that: I'm going to tell you a lot of different ways to get started, no matter
-your experience level. There are so many things to do that there's something for everyone.
-Sure, there are some areas that require domain-specific expertise, like writing a MIR optimization in the
-compiler requires good knowledge of MIR, but there are also things that don't even require knowledge of Rust,
-so even if you're still a beginner you can help, and I can guarantee that you will learn a lot.
-
-The only thing you really need is some spare time and interest. Some tasks are very time intensive, but
-other tasks require a lot less time. That said, if you don't have any spare time, then it's going to be hard.
-
-With that out of the way, let's look at some places you can contribute to.
-
-First, we're going to look at ways to contribute that don't involve opening VSCode or whatever your favourite editor is.
-When talking about contributing to open source projects, we usually think of contributing code, like opening Pull Requests.
-While this is an important part of any open source projects and no less true in Rust, it's also by far not the only thing to do.
-And especially those other tasks are often forgotten and underappreciated. We're also not great at this, there's a very nice page
-called `thanks.rust-lang.org` that contains a list of contributors, but it only counts commit and review counts.
-
-The first thing I'm going to talk about is triaging issues, something that I have also done a lot myself.
-Triaging issues is great because it's easy to get started and you can put in very variable amounts of time.
-You can triage one issue in two minutes, or you can spend 2 hours on an issue. It always depends on the
-issue and how much time you want to put in, even the small work is nice.
-
-Some of the things that are involved when triaging issues are labelling, minimization, bisection and adding tests.
-
-Labelling is the task here that takes the least time. We have an example issue here, that requests that the standard
-library documents the memory ordering guarantees for the thread spawn function.
-Let's think about what this is: This is a *feature request* for *documentation* about *threads* and *atomics*.
-The feature request is to the *library API team*, as it's about a guarantee.
-
-So we add those labels. Remove needs-triage, as we're doing triage, add the docs, thread and atomics area, the category
-feature request and the team libs api. If you're not part of a team that has write access to the repository, you can leave
-a comment with rustbot as shown here. If you're interested and want to know more, see the link below.
-
-For bugs, especially compiler panics (so called internal compiler errors, ICE for short)
-
 # bullet points
 
 - welcome
+    - in this talk i well tell you how to contribute
     - many ways to contribute
-    - after, start yourself
+    - after the talk, start yourself
+    - reason for the talk: estebans talk 3 years ago
 - whoami
     - nils, compiler contributors team
     - helping people, triaging, shitposting on discord
 - others
-    - no one yet :(
+    - reviewed the talk
+    - important path of why I contribute
+    - friends reviewing your PRs
 - start
     - some contributed before
     - wanted to but never have
     - many ways, no matter experience
     - some domain-expecific expertise
     - some no knowledge of rust
-    - learn
-- what to
+    - will learn something
+    - requirement: time and interest
+- what to contribute?
+    - where to get started?
 - not code
     - usual focus on code
     - rust also not good, thanks.rust-lang.org
 - triage
-    - same
+    - easy to get started
     - variable amounts of time
     - labelling, minimization, bisection, adding tests
 - labelling
+    - helps with
+        - organizing issues
+        - finding related issues
     - least time
     - std document mmeory ordering thread::spawn
     - feature request, documentation, threads, atomics, libs api
     - -needs-triage +A-docs +T-libs-api +C-feature-request +A-thread +A-atomics
+    - A- , T-, C-
     - use rustbot
     - see link
 - bisect
-    - helps debugging
-    - priorization for recent regression
+    - helps with
+        - finding the root cause of the problem
+        - figure out when regression happened -> priorization
     - E-needs-bisect (not only)
     - ICE easiest
     - cargo-bisect-rustc (--access github)
     - start date, often last year or last few months
     - issue comment
+    - potential problems
+        - feature
 - minimization
-    - helps debugging
+    - helps with
+        - debugging
+        - coming up with a test
     - E-needs-mcve
     - me in 2 hours to 60 lines, on github
-    - felix (compiler team) blog post
+    - felix (compiler team) blog post (outdated)
     - cargo-minimize
+    - helps you learn more about rust
 - adding tests
     - E-needs-test
     - fixed, no test
     - commit test
-    - see compiler section
 - existing unstable features
     - a lot of unstable features
     - used some or many of them, a favourite
-    - not GCE, const traits or specialization
     - goal: stabilize or close
 - tracking issues
     - C-tracking-issue
@@ -114,7 +78,7 @@ For bugs, especially compiler panics (so called internal compiler errors, ICE fo
     - middle
 - summarize
     - most important: summarize discussion
-    - aggregate open and resolved
+    - aggregate open and resolved questions
     - propose next steps, suggest answers
 - stabilization report
     - no open questions
@@ -123,6 +87,7 @@ For bugs, especially compiler panics (so called internal compiler errors, ICE fo
 - close
     - use cases haven't proven themselves
     - subseeded by other feature
+    - also summarize discussion
 - fcps
     - team decisions
     - majority approves
@@ -130,31 +95,29 @@ For bugs, especially compiler panics (so called internal compiler errors, ICE fo
     - want to write code
     - lots of code
 - official tooling
-    - recommendation
     - very good, but needs help
     - different, choose
     - fix bugs, implement new features (like lints)
-- plsss elaborate on the tooling aaaa
 - standard library
 - compiler
     - me
     - diagnostics (many, many)
     - internal compiler error fixes (variable difficulty)
-    - E-has-mentor
+    - E-mentor
 - diagnostics
     - my first
     - search for issue, fix it
-- diagnostics how to
-    - A-diagnostics label, close to 2000
-    - dev guide
-    - implement the fix
-    - zulip.rust-lang.org
-- this compiler section really sucks lol
-- reviews
-    - review other peoples PRs
-    - typos, bugs, case missing
-    - saves work, faster
+- examples
+- rustc dev guide
+- looking at PRs
+    - if unsure
+    - know what's happening
+    - learn from others
+    - do leave comments
 - to remember
-    - its over
-- review times
-    - 
+    - many volunteers, no guaranteed review time
+- ask for help on zulip
+- end
+    - i hope i was able to encourage some of you to get started
+    - for others, learn how rust works
+    - questions
