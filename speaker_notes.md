@@ -3,10 +3,10 @@
 # bullet points
 
 - welcome
-    - in this talk i well tell you how to contribute
-    - many ways to contribute
-    - after the talk, start yourself
-    - reason for the talk: estebans talk 3 years ago
+    - im nils
+    - talk about how to contribute to the rust project
+    - esteban rustconf 3 years ago
+    - you in 3 years!
 - whoami
     - nils, compiler contributors team
     - helping people, triaging, shitposting on discord
@@ -62,6 +62,7 @@
     - felix (compiler team) blog post (outdated)
     - cargo-minimize
     - helps you learn more about rust
+    - starting point for fixing
 - adding tests
     - E-needs-test
     - fixed, no test
