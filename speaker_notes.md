@@ -10,6 +10,7 @@
 - whoami
     - nils, compiler contributors team
     - helping people, triaging, shitposting on discord
+    - 1.72 cfg
 - others
     - reviewed the talk
     - important path of why I contribute
